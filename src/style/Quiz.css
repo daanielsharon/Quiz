@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+	font-family: 'Open Sans';
+	font-weight: bold;
+}
+
+.page {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(2, 0, 36);
+	background: linear-gradient(32deg, rgba(2, 0, 36, 1) 0%, rgba(86, 86, 159, 1) 37%, rgba(0, 212, 255, 1) 100%);
+}
+
+.kategori {
+	width: 100%;
+}
+
+.select {
+	padding: 10px 0px;
+}
+
+select {
+	padding: 6px;
+	background-color: white;
+	border: 3px solid #e8e8e8;
+	border-radius: 2%;
+}
+
+.label {
+	display: block;
+	width: 100%;
+	margin-bottom: 7px;
+}
+
+.container {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0);
+	padding: 30px;
+	background: white;
+	border-radius: 10px;
+	margin: 10px 0px;
+}
+
+.alert {
+	color: red;
+	text-align: center;
+}
+
+.info {
+	display: flex;
+	justify-content: space-around;
+	font-size: 19px;
+}
+
+.wholeContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.opsiContainer {
+	display: flex;
+	flex-direction: column;
+	margin-top: 25px;
+}
+
+.opsi {
+	margin: 10px 0px;
+	padding: 15px 0px;
+	background: white;
+	border: 1px solid black;
+	border-radius: 8px;
+	font-size: 15px;
+}
+
+.opsi:hover {
+	background: #00d4ff;
+}
+
+.heading {
+	margin: 15px 0px;
+	font-size: 30px;
+}
+
+.questions {
+	text-align: justify;
+	line-height: 1.6rem;
+	font-size: 18px;
+}
+
+p {
+	text-align: center;
+}
+
+.loading {
+	width: 100%;
+	margin: 20px 0px;
+	animation: loadingAnimation 2s ease infinite alternate forwards;
+	transition: 2s;
+}
+
+.loading-difficulty {
+	width: 100%;
+	position: relative;
+	top: 4px;
+	transform: scale(1);
+	animation: leftToRight 2s infinite;
+}
+
+@keyframes loadingAnimation {
+	0% {
+		transform: scale(1.4);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes leftToRight {
+	0% {
+		rotate: 0deg;
+	}
+	100% {
+		rotate: 360deg;
+	}
+}
+
+@media only screen and (max-width: 765px) {
+	.wholeContainer {
+		width: 68%;
+	}
+}

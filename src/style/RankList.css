@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+	font-family: 'Open Sans';
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.page {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(2, 0, 36);
+	background: linear-gradient(32deg, rgba(2, 0, 36, 1) 0%, rgba(86, 86, 159, 1) 37%, rgba(0, 212, 255, 1) 100%);
+}
+
+h3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 20px;
+}
+
+.container {
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0);
+	padding: 30px;
+	background: white;
+	border-radius: 10px;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.icon {
+	color: black;
+	position: relative;
+	top: 6px;
+}
+
+div::before {
+	width: 10px;
+	height: 10px;
+	background: red;
+	border-radius: 80%;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.you::before {
+	content: '';
+}
+
+p {
+	font-size: 25px;
+	margin: 0px;
+}
+
+.rankList {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px;
+	border-bottom: 2px solid #e8e8e8;
+}
+
+.rankList:hover {
+	background: #f8f8f8;
+}
+
+.rankList:last-child {
+	margin-bottom: 0px;
+}
+
+@media screen and (min-width: 765px) {
+	.container {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+		width: 30%;
+	}
+}
