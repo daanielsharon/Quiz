@@ -1,6 +1,6 @@
 {
 	"name": "deployment",
-	"homepage": "https://daanielsharon.github.io/quiz/",
+	"homepage": "https://daanielsharon.github.io/Quiz/",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
